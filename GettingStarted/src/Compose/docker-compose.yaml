@@ -53,7 +53,7 @@ services:
     - settings__0__value=data source=sqlserver;initial catalog=sys;user id=sa;password=${DB_PASSWORD};TrustServerCertificate=true;MultipleActiveResultSets=true;
     - sys__token=${INSTANCE_TOKEN}
     - debugTarget__url=http://platform_qa:44003
-    - debugTarget__token=${INSTANCE_TOKEN}
+    - debugTarget__authenticationToken=${INSTANCE_TOKEN}
     - TP_SHELL_MODE=0
     - Logging__LogLevel__Default=Warning
     - routing__baseUrl=http://127.0.0.1:${DEV_PORT}  
